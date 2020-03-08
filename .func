@@ -1,0 +1,14 @@
+#All my Shell funcs go here
+
+redir () {			#Just renames the directory or deletes it if there is no second argument
+	
+	if [ "$#" -eq 2 ]; then
+		mkdir $2;
+		mv $1/* $2/;
+	fi
+	rm -rf $1;
+
+	if [ "$#" -gt 2 ]; then
+		echo "Usage: redir existing_directory new_directory";
+	fi
+}
