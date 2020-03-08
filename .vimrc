@@ -10,6 +10,10 @@ set incsearch
 
 set shiftwidth=4
 
+set showmatch
+
+set clipboard=unnamed
+
 filetype on
 
 set autoindent
@@ -29,21 +33,3 @@ abbreviate #e *********/
 abbreviate im I'm
 
 abbreviate al alias
-
-abbreviate lets let's
-
-abbreviate Lets Let's
-
-abbreviate S STYLE:
-
-abbreviate Dont Don't
-
-abbreviate dont don't
-
-abbreviate ive I've
-
-map <F12> 0i#include<<Esc>$a><Esc>j
-
-map <F10> 0i//<Esc>j
-
-map <F9> 0xxj

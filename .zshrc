@@ -97,3 +97,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#My Organized Alias files
+
+source $HOME/.aliases
+source $HOME/.git_aliases
