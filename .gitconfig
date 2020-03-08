@@ -1,0 +1,8 @@
+[user]
+	name = smvamsi96
+	email = smvamsi96@gmail.com
+[color]
+	ui = true
+[core]
+	editor = vi
+	excludesfile = /Users/smvamsi/.gitignore_global
