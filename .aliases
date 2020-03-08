@@ -1,0 +1,6 @@
+#All My zsh aliases go here!
+
+alias cls=clear
+alias reload="source $HOME/.zshrc"
+alias ae="vi .aliases"
+

@@ -1,0 +1,7 @@
+#All my git aliases go here
+
+alias gae="vi .git_aliases"
+alias gs="git status"
+alias gc="git commit"
+alias gcam="git commit -am"
+
