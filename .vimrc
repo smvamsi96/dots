@@ -1,3 +1,9 @@
+set nocompatible
+
+filetype plugin on
+
+runtime macros/matchit.vim
+
 set number
 
 syntax on
@@ -13,8 +19,6 @@ set shiftwidth=4
 set showmatch
 
 set clipboard=unnamed
-
-filetype on
 
 set autoindent
 
@@ -33,3 +37,11 @@ abbreviate #e *********/
 abbreviate im I'm
 
 abbreviate al alias
+
+nnoremap <silent> b[ :bprevious<CR>
+
+nnoremap <silent> b] :bnext<CR>
+
+nnoremap <silent> B[ :bfirst
+
+nnoremap <silent> B] :blast

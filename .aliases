@@ -1,6 +1,32 @@
 #All My zsh aliases go here!
 
-alias cls=clear
-alias reload="source $HOME/.zshrc"
-alias ae="vi .aliases"
+alias cl="clear"
+alias reload="source $HOME/.zshrc"							# reload the .zshrc
+alias ae="vi $HOME/.aliases;reload"					   		# ae stands for alias edit
+alias z="vi $HOME/.zshrc;reload"							# z open .zshrc
+alias ve="vi $HOME/.vars;reload"							# ve stands for variable edit
+alias fu="vi $HOME/.func"									# fu open custom functions file
+alias vr="vi $HOME/Code/dots/.vimrc"						# opens .vimrc
+alias p="ping -c 3 8.8.8.8"
+alias py="python3"
+alias la="ls -aF"
+alias ll="ls -laF"
+alias l="ls -FG"
+alias u="cd .."
+alias h="cd ~"
+alias o="open"
+alias br="bat README.md"
+alias bwi="brew install"
+alias bws="brew search"
+alias s="cd -"												# quickly move between the current and previous directories
+alias spoof="sudo ifconfig en0 ether 20:79:18:a3:b9:d9"  	# spoofs the MAC address for connecting to a network
+alias blr="echo $blruser"								 	# outputs username and password for connecting to a network
+alias fl="flask run"										# serves flask project on local host
+alias flp="flask run --host=0.0.0.0"					 	# serves flask project to the network
+alias dm="python3 /Users/smvamsi/code/make_up/manage.py"
+alias createenv="python3 -m venv"							# creates a virtual_environment with the argument's name
+alias aenv="echo source env/bin/activate"					# echoes the command to activate the python virtual environment
+alias dmp="py manage.py runserver 0.0.0.0:5555"				# serves django project to the whole network
+alias dmr="dm runserver"									# serves django project on local host
+alias cpt="cp ~/temp.html"									# creates a html template to the argument
 

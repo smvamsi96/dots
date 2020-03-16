@@ -98,8 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#My Organized Alias files
-
-source $HOME/.aliases
-source $HOME/.git_aliases
-source $HOME/.func
+source $HOME/.aliases        # All my Aliases go here
+source $HOME/.git_aliases    # All my git aliases go here
+source $HOME/.func           # All my functions go here
+source $HOME/.vars			 # All my variables go here
