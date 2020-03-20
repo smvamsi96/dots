@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/smvamsi/.oh-my-zsh"
+export ZSH="/home/smvamsi96/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -68,7 +68,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode copyfile extract)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,4 +101,4 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases        # All my Aliases go here
 source $HOME/.git_aliases    # All my git aliases go here
 source $HOME/.func           # All my functions go here
-source $HOME/.vars			 # All my variables go here
+source $HOME/.vars           # All my variables go here
