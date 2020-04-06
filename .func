@@ -13,10 +13,12 @@ redir () {			#Just renames the directory or deletes it if there is no second arg
 	fi
 }
 
+# LookUp MAC Vendor 
 oui () {
 	curl "api.macvendors.com/$1"
 }
 
+# Go to a folder in code directory
 co () {
 	cd $HOME/code/$1
 }
