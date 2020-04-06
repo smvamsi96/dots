@@ -17,8 +17,6 @@ alias h="cd ~"
 alias o="open"
 alias br="bat README.md"
 alias s="cd -"												# quickly move between the current and previous directories
-alias fl="flask run"										# serves flask project on local host
-alias flp="flask run --host=0.0.0.0"					 	# serves flask project to the network
 alias dm="python3 manage.py"
 alias createenv="python3 -m venv"							# creates a virtual_environment with the argument's name
 alias aenv="echo source env/bin/activate"					# echoes the command to activate the python virtual environment
