@@ -13,3 +13,10 @@ redir () {			#Just renames the directory or deletes it if there is no second arg
 	fi
 }
 
+oui () {
+	curl "api.macvendors.com/$1"
+}
+
+co () {
+	cd $HOME/code/$1
+}
