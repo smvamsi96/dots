@@ -16,5 +16,11 @@ redir () {			#Just renames the directory or deletes it if there is no second arg
 
 oui () {
 	
+	echo "$1 belongs to:"
 	curl "https://api.macvendors.com/$1"
+	echo "\n"
+}
+
+co () {
+	cd $HOME/code/$1
 }
