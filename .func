@@ -22,5 +22,5 @@ oui () {
 }
 
 co () {
-	cd $HOME/code/$1
+	"cd $HOME/code/$1/"
 }

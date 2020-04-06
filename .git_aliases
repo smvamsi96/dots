@@ -5,7 +5,6 @@ alias gs="git status"
 alias gc="git commit -m"
 alias gcam="git add . && git commit -m"
 
-# push a remote branch
 gp () {
 	git push -u origin $1
 }
