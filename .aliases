@@ -29,3 +29,4 @@ alias ifip="ifconfig | grep inet"						# Show Local IP
 alias ifmac="ifconfig | grep ether"						# Show MAC Address
 alias ifs="ifconfig | grep status"						# Show interface status
 alias myip="curl ifconfig.me"								# Show your Public IP
+alias pip="pip3"
