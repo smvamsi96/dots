@@ -4,4 +4,7 @@ alias gae="vi $HOME/.git_aliases;reload"
 alias gs="git status"
 alias gc="git commit -m"
 alias gcam="git add . && git commit -m"
-alias gp="git push -u origin master"
+
+gip () {
+	git push -u origin $1
+}
