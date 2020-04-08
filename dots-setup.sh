@@ -1,7 +1,7 @@
 #!/bin/zsh
 
-if [ -d "${HOME}/code" ]
-	"A code directory already exists in you ${HOME} directory\nGoing Full Speed Ahead!\n"
+if [ -d "${HOME}/code" ];then
+	echo "A code directory already exists in you ${HOME} directory\nGoing Full Speed Ahead!\n"
 	./repo-clone.sh
 else
 	mkdir ${HOME}/code
@@ -18,6 +18,7 @@ fi
 linux=0	# not linux by default
 
 echo "Enter 1 if it's linux or Just press enter if it's mac: "
+read $linux
 
 if [ $linux -ne "1" ]; then
 	echo "Treating the System as Mac os\n"
@@ -28,6 +29,6 @@ else
 fi
 
 cd $HOME
-for dot-file in ${HOME}/code/dots/.*; do ln -sv ${dot-file}; done
+for file in ${HOME}/code/dots/.*; do ln -sv ${file}; done
 
 echo "----------------------------------------\nYou're Good to Go\n----------------------------------------\n"
