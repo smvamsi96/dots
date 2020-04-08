@@ -24,3 +24,15 @@ oui () {
 co () {
 	cd "/Users/smvamsi/code/$1"
 }
+
+open-posts () {
+	vi $HOME/code/dickie-moser/_posts/*
+}
+
+new-post () {
+	vi $HOME/code/dickie-moser/_posts/$1
+}
+
+gcamp () {
+	gcam "$1" && gip master
+}

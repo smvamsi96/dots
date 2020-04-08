@@ -1,0 +1,4 @@
+# All brew aliases and funcs here.
+
+alias bwi="brew install"
+alias bws="brew search"

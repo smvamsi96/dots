@@ -105,11 +105,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source $HOME/.aliases        # All my Aliases go here
-source $HOME/.git_aliases    # All my git aliases go here
-source $HOME/.func           # All my functions go here
-source $HOME/.vars			 # All my variables go here
-source $HOME/stolen_addresses # MAC Addresses
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Source the source list
+source $HOME/.source_list
