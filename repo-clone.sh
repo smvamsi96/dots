@@ -18,4 +18,4 @@ fi
 
 # Clone all the repos in a sweep!
 
-for repo in $repos; do git clone https://github.com/smvamsi96/${repo}.git; done
+for repo in $repos; do git clone https://github.com/smvamsi96/${repo}.git && echo "\n"; done

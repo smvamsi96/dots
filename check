@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+# checkout to linux branch
+
+git checkout linux
