@@ -2,11 +2,12 @@
 
 if [ -d "${HOME}/code" ]
 	"A code directory already exists in you ${HOME} directory\nGoing Full Speed Ahead!\n"
+	./repo-clone.sh
 else
 	mkdir ${HOME}/code
+	cd ${HOME}/code
+	./repo-clone.sh
 fi
-
-cd "${HOME}/code" && git clone https://github.com/smvamsi96/dots.git
 
 if [ $? -eq 1 ];then
 	echo "Something wrong with the ${HOME}/code directory"
