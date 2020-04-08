@@ -1,6 +1,8 @@
 #All My zsh aliases go here!
 
 alias cl="clear"
+alias cll="cl;l"
+alias cla="cl;la"
 alias h="cd ~"
 alias u="cd .."
 alias s="cd -"												# quickly move between the current and previous directories
