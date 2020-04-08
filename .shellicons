@@ -1,0 +1,3 @@
+# making emojis with UNICODE
+
+alias shrug="echo '¯\_(ツ)_/¯'"										# add this to copy to clip-board - "| pbcopy"
