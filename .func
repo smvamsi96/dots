@@ -13,12 +13,26 @@ redir () {			#Just renames the directory or deletes it if there is no second arg
 	fi
 }
 
-# LookUp MAC Vendor 
+
 oui () {
-	curl "api.macvendors.com/$1"
+	
+	echo "$1 belongs to:"
+	curl "https://api.macvendors.com/$1"
+	echo "\n"
 }
 
-# Go to a folder in code directory
 co () {
-	cd $HOME/code/$1
+	cd "/Users/smvamsi/code/$1"
+}
+
+open-posts () {
+	vi $HOME/code/dickie-moser/_posts/*
+}
+
+new-post () {
+	vi $HOME/code/dickie-moser/_posts/$1
+}
+
+gcamp () {
+	gcam "$1" && gip master
 }

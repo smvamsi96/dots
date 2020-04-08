@@ -1,0 +1,6 @@
+# All python aliases and funcs here.
+
+alias py="python3"											# easy to type(for using python --version = 3)
+alias pip="pip3"											# many pip commands on web are easy copy-paste this way
+alias createenv="python3 -m venv"							# creates a virtual_environment with the argument's name
+alias aenv="echo source env/bin/activate"					# echoes the command to activate the python virtual environment

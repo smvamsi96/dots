@@ -1,4 +1,4 @@
-#All my git aliases go here
+#All my git aliases and funcs go here
 
 alias gae="vi $HOME/.git_aliases;reload"
 alias gs="git status"
