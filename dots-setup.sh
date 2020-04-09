@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 if [ -d "${HOME}/code" ];then
 	echo "A code directory already exists in you ${HOME} directory\nGoing Full Speed Ahead!\n"
@@ -17,8 +17,8 @@ fi
 # is it linux?
 linux=0	# not linux by default
 
-echo "Enter 1 if it's linux or Just press enter if it's mac: "
-read $linux
+# read linux variable.
+read -p "Enter 1 if it's linux or Just press enter if it's mac: " linux
 
 if [ $linux -ne "1" ]; then
 	echo "Treating the System as Mac os\n"
@@ -29,6 +29,12 @@ else
 fi
 
 cd $HOME
+rm .zshrc
 for file in ${HOME}/code/dots/.*; do ln -sv ${file}; done
+
+cd ${HOME}
+rm .gitconfig .gitignore 
+rm -rf .git
+source .zshrc
 
 echo "----------------------------------------\nYou're Good to Go\n----------------------------------------\n"
