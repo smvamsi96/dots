@@ -22,7 +22,7 @@ oui () {
 }
 
 co () {
-	cd "/Users/smvamsi/code/$1"
+	cd ${HOME}/Code/$1
 }
 
 open-posts () {
