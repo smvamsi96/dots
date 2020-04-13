@@ -36,3 +36,15 @@ new-post () {
 gcamp () {
 	gcam "$1" && gip master
 }
+
+
+jlog () {
+	separator="------------------------------"
+	date_today=$(date +"%Y-%m-%d")
+	time_now=$(date  +"%H:%M:%S")
+	journal_path="${HOME}/Code/journal"
+	echo "${separator}\n${time_now}\n${separator}" >> "${journal_path}/${date_today}.j"
+	vi ${journal_path}/${date_today}.j
+	echo "\n" >> "${journal_path}/${date_today}.j"
+
+}
