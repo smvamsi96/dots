@@ -28,8 +28,6 @@ abbreviate ab abbreviate
 
 abbreviate hed #include<stdio.h> int main() {  }
 
-abbreviate smv elliot.jsteve
-
 abbreviate #b /*********
 
 abbreviate #e *********/

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# checkout to linux branch
+# checkout master branch
 
-git checkout linux
+git checkout master

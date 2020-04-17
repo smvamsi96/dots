@@ -3,6 +3,7 @@
 alias gae="vi $HOME/.git_aliases;reload"
 alias gs="git status"
 alias gc="git commit -m"
+alias gmas="gch master"
 alias gch="git checkout"
 alias gb="git branch"
 alias gcam="git add . && git commit -m"
