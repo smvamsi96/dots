@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -d "${HOME}/code" ];then
-	echo "A code directory already exists in you ${HOME} directory\nGoing Full Speed Ahead!\n"
+	echo "A ${HOME}/code directory already exists!\nGoing Full Speed Ahead!\n"
 	./repo-clone.sh
 else
 	mkdir ${HOME}/code
@@ -15,12 +15,12 @@ if [ $? -eq 1 ];then
 fi
 
 # is it linux?
-linux=0	# not linux by default
+# linux=0	# not linux by default
 
 # read linux variable.
-read -p "Enter 1 if it's linux or Just press enter if it's mac: " linux
+# read -p "Enter 1 if it's linux or Just press enter if it's mac: " linux
 
-if [ $linux -ne "1" ]; then
+if [ $(uname) = Darwin ]; then			# using uname is better than reading user's input
 	echo "Treating the System as Mac os\n"
 else
 	echo "Treating the System as Linux\n"
@@ -33,8 +33,11 @@ rm .zshrc
 for file in ${HOME}/code/dots/.*; do ln -sv ${file}; done
 
 cd ${HOME}
+echo "Removing .gitconfig and .gitignore"
 rm .gitconfig .gitignore 
+echo "Removing .git/"
 rm -rf .git
-source .zshrc
+echo "Sourcing .zshrc"
+source .zshrc 2>&1 >&3
 
-echo "----------------------------------------\nYou're Good to Go\n----------------------------------------\n"
+echo "----------------------------------------You're Good to Go----------------------------------------"
