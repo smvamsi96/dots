@@ -1,19 +1,6 @@
 #All my Shell funcs go here
 
-redir () {			#Just renames the directory or deletes it if there is no second argument
-	
-	if [ "$#" -ne "1" || "$#" -ne "2" ]; then
-		echo "Usage: redir existing_directory new_directory";
-	else
-		if [ "$#" -eq "2" ]; then
-			mkdir $2;
-			mv $1/* $2/;
-		fi
-		rm -rf $1;
-	fi
-}
-
-
+# Lookup Vendor name.
 oui () {
 	
 	echo "$1 belongs to:"
@@ -21,30 +8,32 @@ oui () {
 	echo "\n"
 }
 
+# opens any directory in ~/Code.
 co () {
 	cd ${HOME}/Code/$1
 }
 
-open-posts () {
-	vi $HOME/code/dickie-moser/_posts/*
-}
-
-new-post () {
-	vi $HOME/code/dickie-moser/_posts/$1
-}
-
+# adds, commits, records message and pushes changes to GitHub.
 gcamp () {
 	gcam "$1" && gip master
 }
 
-
+# Handles my journal.
 jlog () {
 	separator="------------------------------"
 	date_today=$(date +"%Y-%m-%d")
 	time_now=$(date  +"%H:%M:%S")
-	journal_path="${HOME}/Code/journal"
-	echo "${separator}\n${time_now}\n${separator}" >> "${journal_path}/${date_today}.j"
-	vi ${journal_path}/${date_today}.j
-	echo "\n" >> "${journal_path}/${date_today}.j"
+	file_path="${HOME}/Code/jlogs"
+	echo "${separator}\n${time_now}\n${separator}" >> "${file_path}/${date_today}.j"
+	vi ${file_path}/${date_today}.j
+}
 
+# Handles my Philosophies.
+hlog () {
+	separator="------------------------------"
+	date_today=$(date +"%Y-%m-%d")
+	time_now=$(date  +"%H:%M:%S")
+	file_path="${HOME}/Code/hlogs"
+	echo "${separator}\n${time_now}\n${separator}" >> "${file_path}/${date_today}.h"
+	vi ${file_path}/${date_today}.h
 }
