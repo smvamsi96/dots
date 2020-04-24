@@ -37,3 +37,8 @@ hlog () {
 	echo "${separator}\n${time_now}\n${separator}" >> "${file_path}/${date_today}.h"
 	vi ${file_path}/${date_today}.h
 }
+
+vp () {
+	cd ~/.vim/bundle
+	git clone $1
+}

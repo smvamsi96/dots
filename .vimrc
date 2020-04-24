@@ -1,7 +1,15 @@
 set nocompatible
 
-filetype plugin on
+filetype plugin indent on
 
+execute pathogen#infect()
+
+
+" for loading NERDTree on startup
+autocmd vimenter * NERDTree
+
+
+" mine
 runtime macros/matchit.vim
 
 set number

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 if [ -d "${HOME}/Code" ];then
 	echo "A ${HOME}/Code directory already exists!\nGoing Full Speed Ahead!\n"
 else
