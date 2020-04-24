@@ -11,11 +11,8 @@ set -o pipefail
 
 # An array of your repositories
 repos=(
-	"dots"
 	"smvamsi96.github.io"
 	"lexie"
-	"hlogs"
-	"jlogs"
 	"knives"
 )
 

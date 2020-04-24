@@ -25,19 +25,15 @@ if [ $(uname) = Darwin ]; then			# using uname is better than reading user's inp
 else
 	echo "Treating the System as Linux\n"
 	cd "${HOME}/Code/dots/"
-	git checkout linux
 fi
 
-cd $HOME
-rm .zshrc
-for file in ${HOME}/Code/dots/.*; do ln -sv ${file}; done
+cd $HOME && for file in ${HOME}/Code/dots/.*; do ln -sv ${file}; done
 
-cd ${HOME}
 echo "Removing .gitconfig and .gitignore"
-rm .gitconfig .gitignore 
+rm ${HOME}/.gitconfig ${HOME}/.gitignore 
 echo "Removing .git/"
-rm -rf .git
+rm -rf ${HOME}/.git
 echo "Sourcing .zshrc"
-source .zshrc 2>&1 >&3
+source ${HOME}/.zshrc
 
 echo "----------------------------------------You're Good to Go----------------------------------------"
