@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# checkout master branch
-
-git checkout master

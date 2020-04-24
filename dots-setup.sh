@@ -1,16 +1,16 @@
 #!/bin/bash
 
-if [ -d "${HOME}/code" ];then
-	echo "A ${HOME}/code directory already exists!\nGoing Full Speed Ahead!\n"
-	./repo-clone.sh
+if [ -d "${HOME}/Code" ];then
+	echo "A ${HOME}/Code directory already exists!\nGoing Full Speed Ahead!\n"
 else
-	mkdir ${HOME}/code
-	cd ${HOME}/code
-	./repo-clone.sh
+	mkdir ${HOME}/Code
+	cd ${HOME}/Code
 fi
 
+./repo-clone.sh
+
 if [ $? -eq 1 ];then
-	echo "Something wrong with the ${HOME}/code directory"
+	echo "Something wrong with the ${HOME}/Code directory"
 	break;
 fi
 
@@ -24,13 +24,13 @@ if [ $(uname) = Darwin ]; then			# using uname is better than reading user's inp
 	echo "Treating the System as Mac os\n"
 else
 	echo "Treating the System as Linux\n"
-	cd "${HOME}/code/dots/"
+	cd "${HOME}/Code/dots/"
 	git checkout linux
 fi
 
 cd $HOME
 rm .zshrc
-for file in ${HOME}/code/dots/.*; do ln -sv ${file}; done
+for file in ${HOME}/Code/dots/.*; do ln -sv ${file}; done
 
 cd ${HOME}
 echo "Removing .gitconfig and .gitignore"

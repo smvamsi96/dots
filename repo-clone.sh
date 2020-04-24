@@ -14,6 +14,9 @@ repos=(
 	"dots"
 	"smvamsi96.github.io"
 	"lexie"
+	"hlogs"
+	"jlogs"
+	"knives"
 )
 
 if [ -d "$HOME/Code" ];then

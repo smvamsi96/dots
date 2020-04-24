@@ -22,7 +22,6 @@ alias myip="curl ifconfig.me"								# Show your Public IP
 alias nv="nvim"
 alias vi="vim"
 alias xe="chmod +x"											# quickly make a file executable
-alias di="dict"
 
 # System Specific aliases here
 
@@ -31,6 +30,7 @@ if [ "$(uname)" = "Linux" ]; then
 	alias ifip="ifconfig | grep inet"							# Show Local IP
 	alias ifmac="ifconfig | grep ether"							# Show MAC Address
 	alias ifs="ifconfig | grep status"							# Show interface status
+	alias di="dict"
 else
 	# Mac Specific
 	alias ifip="ipconfig getifaddr en0 | grep ."				# Show Local IP
