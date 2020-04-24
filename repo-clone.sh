@@ -11,9 +11,9 @@ set -o pipefail
 
 # An array of your repositories
 repos=(
-	"dots"
 	"smvamsi96.github.io"
 	"lexie"
+	"knives"
 )
 
 if [ -d "$HOME/Code" ];then
