@@ -2,11 +2,13 @@ set nocompatible
 
 filetype plugin indent on
 
-execute pathogen#infect()
-
-
+" execute pathogen#infect()
+" call pathogen#helptags()
 " for loading NERDTree on startup
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
+
+" for py-mode
+" let g:pymode = 1
 
 
 " mine

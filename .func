@@ -40,5 +40,11 @@ hlog () {
 
 vp () {
 	cd ~/.vim/bundle
-	git clone $1
+	git clone --recurse-submodules $1
+	cd -
+}
+
+country (){
+	echo "ip: $1"
+	curl https://ipapi.co/$1/country/
 }
