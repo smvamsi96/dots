@@ -1,7 +1,7 @@
 #All My zsh aliases go here!
 
-alias cl="clear"
-alias cll="cl;l"
+alias cl="clear;l"
+alias cll="cl;ll"
 alias cla="cl;la"
 alias h="cd ~"
 alias u="cd .."
@@ -36,4 +36,5 @@ else
 	alias ifip="ipconfig getifaddr en0 | grep ."				# Show Local IP
 	alias ifmac="ifconfig en0 | grep ether"						# Show MAC Address
 	alias ifs="ifconfig en0 | grep status"						# Show interface status
+	alias o="open"
 fi
