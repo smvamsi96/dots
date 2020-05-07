@@ -37,3 +37,14 @@ hlog () {
 	echo "${separator}\n${time_now}\n${separator}" >> "${file_path}/${date_today}.h"
 	vi ${file_path}/${date_today}.h
 }
+
+vp () {
+	cd ~/.vim/bundle
+	git clone --recurse-submodules $1
+	cd -
+}
+
+country (){
+	echo "ip: $1"
+	curl https://ipapi.co/$1/country/
+}

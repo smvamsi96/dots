@@ -1,7 +1,17 @@
 set nocompatible
 
-filetype plugin on
+filetype plugin indent on
 
+" execute pathogen#infect()
+" call pathogen#helptags()
+" for loading NERDTree on startup
+" autocmd vimenter * NERDTree
+
+" for py-mode
+" let g:pymode = 1
+
+
+" mine
 runtime macros/matchit.vim
 
 set number

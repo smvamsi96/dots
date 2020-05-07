@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 if [ -d "${HOME}/Code" ];then
 	echo "A ${HOME}/Code directory already exists!\nGoing Full Speed Ahead!\n"
 else
@@ -28,7 +29,6 @@ else
 fi
 
 cd $HOME && for file in ${HOME}/Code/dots/.*; do ln -sv ${file}; done
-
 
 echo "Removing .gitconfig and .gitignore"
 rm ${HOME}/.gitconfig ${HOME}/.gitignore 
