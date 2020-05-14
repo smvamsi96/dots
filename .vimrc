@@ -18,6 +18,9 @@ set number
 
 syntax on
 
+" smart-case-insensitivity
+set smartcase
+
 set hlsearch
 
 set tabstop=4

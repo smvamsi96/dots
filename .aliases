@@ -1,8 +1,9 @@
 #All My zsh aliases go here!
 
 alias cl="clear;l"
+alias ucl="cd ..;clear;ls"
 alias cll="cl;ll"
-alias cla="cl;la"
+alias cla="clear;la"
 alias h="cd ~"
 alias u="cd .."
 alias s="cd -"												# quickly move between the current and previous directories
@@ -24,6 +25,7 @@ alias nv="nvim"
 alias vi="vim"
 alias xe="chmod +x"											# quickly make a file executable
 alias dt="date +'%Y-%m-%d'"
+alias tody="bat ~/Code/method/week-1/$(dt).plan"
 
 # System Specific aliases here
 
@@ -39,3 +41,10 @@ else
 	alias ifmac="ifconfig en0 | grep ether"						# Show MAC Address
 	alias ifs="ifconfig en0 | grep status"						# Show interface status
 fi
+
+
+
+
+# temporary aliases
+
+alias t="co pilot"
