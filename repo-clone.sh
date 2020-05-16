@@ -15,7 +15,7 @@ repos=(
 	"knives"
 )
 
-# Internal Field Separator(ask google if you don't know what it is!)
+# Internal Field Separator(ask google, if you don't know what it is!)
 IFS=$'\n\t'
 
 # Clone all the repos in one sweep!

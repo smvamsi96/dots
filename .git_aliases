@@ -8,6 +8,11 @@ alias gch="git checkout"
 alias gb="git branch"
 alias gcam="git add . && git commit -m"
 
+
 gip () {
 	git push -u origin $1
+}
+
+gcl () {
+	git clone "https://github.com/smvamsi96/${1}.git"
 }
