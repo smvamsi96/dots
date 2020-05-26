@@ -49,3 +49,4 @@ fi
 # temporary aliases
 
 alias t="co pilot"
+alias i="pkg install"
