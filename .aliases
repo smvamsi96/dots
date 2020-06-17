@@ -13,7 +13,7 @@ alias z="vi $HOME/.zshrc;reload"							# z open .zshrc
 alias ve="vi $HOME/.vars;reload"							# ve stands for variable edit
 alias fu="vi $HOME/.func;reload"							# fu open custom functions file
 alias vr="vi $HOME/Code/dots/.vimrc"						# opens .vimrc
-alias p="ping -i 0.1 -c 10 8.8.8.8 | grep packet"
+alias p="ping -i 0.2 -c 10 8.8.8.8 | grep packet"
 alias la="exa -aF"
 alias lu="l ../"
 alias ll="exa -laF"
@@ -25,27 +25,20 @@ alias nv="nvim"
 alias vi="vim"
 alias xe="chmod +x"											# quickly make a file executable
 alias dt="date +'%Y-%m-%d'"
-alias tody="bat ~/Code/method/week-1/$(dt).plan"
 
 # System Specific aliases here
 
 if [ "$(uname)" = "Linux" ]; then
 	# Linux Specific
-	alias ifip="ifconfig | grep inet"							# Show Local IP
+	alias ipa="ifconfig | grep inet"							# Show Local IP
 	alias ifmac="ifconfig | grep ether"							# Show MAC Address
 	alias ifs="ifconfig | grep status"							# Show interface status
 	alias di="dict"
 else
 	# Mac Specific
-	alias ifip="ipconfig getifaddr en0 | grep ."				# Show Local IP
+	alias ip="ipconfig"
+	alias ipa="ipconfig getifaddr en0"							# Show Local IP
 	alias ifmac="ifconfig en0 | grep ether"						# Show MAC Address
 	alias ifs="ifconfig en0 | grep status"						# Show interface status
 	alias o="open"
 fi
-
-
-
-
-# temporary aliases
-
-alias t="co pilot"
