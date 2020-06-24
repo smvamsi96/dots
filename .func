@@ -10,7 +10,7 @@ oui () {
 
 # opens any directory in ~/Code.
 co () {
-	cd ${HOME}/Code/$1
+	cd ${HOME}/play/$1
 }
 
 # adds, commits, records message and pushes changes to GitHub.
