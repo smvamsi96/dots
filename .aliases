@@ -25,6 +25,7 @@ alias nv="nvim"
 alias vi="vim"
 alias xe="chmod +x"											# quickly make a file executable
 alias dt="date +'%Y-%m-%d'"
+alias pwn="sudo chown -R $USER"
 
 # System Specific aliases here
 
