@@ -39,7 +39,7 @@ for s in conversion_list:
 
 pattern += '[aeiouxy]*$'
 
-counter = 0
+counter = 0                     # count the number of matches
 
 for word in words:
     isMatch = re.search(pattern, word)  # return a boolean if it's a match
@@ -47,6 +47,7 @@ for word in words:
         print(word)
         counter += 1
 
+# print the number of matches found
 s = str(counter)
 s += ' Matches Found'
 print(s)
